@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POLYTECHNIC UNIVERSITY OF PHILIPPINES</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/
+  all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="script.js"></script>
+</head>
+
+
+
+  <body>
+
+
+
+    <!-- MAIN HOMEEEEEEEEEEEEE -->
+
+    
+      
+      
+      <header>
+        <div class="logo"> <a href="#Home"><img src="imgs/pup-logo.png" alt=""></a> </div>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Course">Course</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <form>
+            <input placeholder="Search">
+            <button>
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+    </header>
+
+    <section class="section-one" id="Home">
+      
+      <main class="content main" onclick="toggleContent()">
+        <img src="imgs/pup-logo.png" alt="logo">
+        <p class="title">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</p>
+        <p class="subscript"><b>QUEZON CITY BRANCH</b></p>
+  
+        <div class="horizontal-line"></div>
+
+        <div class="text-hidden">
+  
+        <p class="quote">"Mula Sa'yo,  Para sa Bayan"</p>
+  
+        <p class="about-text hidden">
+          QUEZON CITY <br><BR>
+          Started as petitions to have a higher educational institution for the youth at the National Government Center area from the community organizations and church groups and negotiations with local officials and other government agencies, the PUP Quezon City Campus is a pantheon of concrete success towards the struggle in people’s fight against ignorance. As enshrined on the Deed of Assignment on 24 March 1997, that is, “to establish a branch or an extension of PUP at the National Government Center with a mandate to bring quality education and subsidized tuition fees to the urban poor communities of Quezon City, with priority given to those from the NGCHP.”</p>
+      </div>
+      </main>
+    </div>
+  
+    <script>
+      function toggleContent() {
+        var contentToShow = document.querySelectorAll(".title, .subscript, .quote");
+        var aboutText = document.querySelector(".about-text");
+  
+        contentToShow.forEach(function (element) {
+          element.classList.toggle("hidden");
+        });
+  
+        aboutText.classList.toggle("hidden");
+      }
+    </script>
+    
+  </section>
+
+
+
+<!-- PUP VMGOOOOOOOOOOOOOOOOOOO -->
+
+
+
+
+    <section class="section-two" id="About">
+      
+      <div class="container-one">
+
+        <div class="box" onclick="toggleFullScreen(this)">
+            <h2>MISSION</h2>
+            <p>Ensuring inclusive and equitable quality education and promoting lifelong learning opportunities through a re-engineered polytechnic university by committing to:</p>
+            <ul>
+                <li>Provide democratized access to educational opportunities for the holistic development of individuals with a global perspective.</li>
+                <li>Offer industry-oriented curricula that produce highly skilled professionals managerial and technical capabilities and a strong sense of public service for nation building.</li>
+                <li>Embed a culture of research and innovation.</li>
+                <li>Continuously develop faculty and employees with the highest level of professionalism.</li>
+                <li>Engage public and private institutions and other stakeholders for the attainment of social development goal.<li>
+                <li>Establish a strong presence and impact in the international academic community.</li>
+            </ul>
+        </div>
+
+        <div class="box" onclick="toggleFullScreen(this)">
+            <h2>VISION</h2>
+            <p>PUP: The National Polytechnic University</p>
+        </div>
+
+        <div class="box" onclick="toggleFullScreen(this)">
+            <h2>GOALS</h2>
+            <p>Transparency and Efficiency:<br></p>
+              <ul><li>Responsibly manage school-related activities that may lead to the holistic development of all stakeholders in instruction, research, and extension.</li></ul>
+            <p><br>System Performance:<br></p>
+              <ul><li>Leadership, collaboration, and strategic partnership in institutional, national, and international activities.</li></ul>
+            <p><br>Organizational Excellence:<br></p>
+              <ul><li>Taking accountability in delivering quality service through excellent performance of faculty members and administrative staff.</li></ul>
+            <p><br>Safety and Health:<br></p>
+              <ul><li>Promote health through worthwhile school activities involving faculty members, staff, and students.</li></ul>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- ACADEMIC PROGRAMSSSSSSSSSSSSSSSSSSSSS -->
+      
+  <section class="section-three" id="Course">
+
+      <div class="academic-programs-title">
+        <h2>ACADEMIC PROGRAMS</h2>
+      </div>
+
+      <div class="program-container">    
+
+        <div class="program-box" onclick="toggleCourses('graduate-studies')">
+          <BR>
+          <h2>Graduate Studies</h2>
+        </div>
+        <div class="program-box" onclick="toggleCourses('undergraduate-degrees')">
+          <h2>Undergraduate Degrees</h2>
+        </div>
+      </div>
+  
+      <div id="graduate-studies-courses" class="course-container">
+        <div class="course" onclick="toggleDetails('mit')">Master in Information Technology (MIT)</div>
+        <div id="mit-details" class="course-details">
+          <p>This program focuses on advanced topics in Information Technology, including software development, network management, and database systems.</p>
+          <p>Duration: 2 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('mem')">Master in Educational Management (MEM)</div>
+        <div id="mem-details" class="course-details">
+          <p>This program is designed for educators and administrators seeking advanced knowledge in educational leadership and management.</p>
+          <p>Duration: 2 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('mpa')">Master in Public Administration (MPA)</div>
+        <div id="mpa-details" class="course-details">
+          <p>This program covers public administration principles, policy analysis, and governance for individuals aiming for leadership roles in the public sector.</p>
+          <p>Duration: 2 years</p>
+        </div>
+      </div>
+  
+      <div id="undergraduate-degrees-courses" class="course-container">
+        <div class="course" onclick="toggleDetails('bsit')">Bachelor of Science in Information Technology (BSIT)</div>
+        <div id="bsit-details" class="course-details">
+          <p>This program focuses on the design and implementation of software applications, network systems, and information databases.</p>
+          <p>Duration: 4 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('bbtledhe')">Bachelor of Business Technology and Livelihood Education major in Home Economics (BBTLEDHE)</div>
+        <div id="bbtledhe-details" class="course-details">
+          <p>This program combines business and home economics education to prepare students for teaching and related careers.</p>
+          <p>Duration: 4 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('btledict')">Bachelor of Business Technology and Livelihood Education major in Information Communication and Technology (BTLEDICT)</div>
+        <div id="btledict-details" class="course-details">
+          <p>This program integrates business and ICT education to equip students with skills for teaching and the ICT industry.</p>
+          <p>Duration: 4 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('bsba-hrm')">Bachelor of Science in Business Administration major in Human Resource Management (BSBA-HRM)</div>
+        <div id="bsba-hrm-details" class="course-details">
+          <p>This program focuses on the principles and practices of human resource management within the business context.</p>
+          <p>Duration: 4 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('bsba-mm')">Bachelor of Science in Business Administration major in Marketing Management (BSBA-MM)</div>
+        <div id="bsba-mm-details" class="course-details">
+          <p>This program emphasizes marketing strategies, consumer behavior, and market research within the business environment.</p>
+          <p>Duration: 4 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('bsentrep')">Bachelor of Entrepreneurship (BSENTREP)</div>
+        <div id="bsentrep-details" class="course-details">
+          <p>This program provides students with the knowledge and skills needed to start and manage their own businesses.</p>
+          <p>Duration: 4 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('bpapfm')">Bachelor of Public Administration major in Public Financial Management (BPAPFM)</div>
+        <div id="bpapfm-details" class="course-details">
+          <p>This program focuses on public financial management, budgeting, and fiscal policies in the public sector.</p>
+          <p>Duration: 4 years</p>
+        </div>
+  
+        <div class="course" onclick="toggleDetails('domtmom')">Diploma in Office Management Technology Medical Office Management (DOMTMOM)</div>
+        <div id="domtmom-details" class="course-details">
+          <p>This diploma program specializes in medical office management, covering administrative tasks in healthcare settings.</p>
+          <p>Duration: 2 years</p>
+        </div>
+      </div>
+  </section>
+
+
+
+<!-- SECTION FOUR GALLERY -->
+
+
+
+  <section class="section-four" id="Gallery">
+
+      <h2 class="text-four"> PUP GALLERY</h1>
+      <div class="container-four">
+ 
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Entrance Gate</div>
+      </div>
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Rothlehner Building</div>
+      </div>
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Covered court</div>
+      </div>
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Interfaith Chapel</div>
+      </div>    
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Student Lounge</div>
+      </div>
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Academic Building</div>
+      </div>
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Audio Visual Room</div>
+      </div>
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+      <div class="card__head">Department of Military Science and Tactics</div>
+      </div>        
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg">
+      <div class="card__head">Misereor Building</div>
+      </div>
+      <div class="card grayscale">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG">
+      <div class="card__head">PUP-QC Pylon</div>
+      </div>
+      </div>
+  </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+  <div class="footer-col" id="Contact">
+      <div class="footer-logo"> <a href="#Home"><img src="imgs/pup-logo.png" alt="logo"></a>
+
+        <p>Don Fabian St., Commonwealth Quezon City, Philippines</p></div>
+
+  </div>
+  <div class="footer-col">
+      <h4>contact us</h4>
+        <div class="contact">
+          <a href="mailto:quezoncity@pup.edu.ph"><i class="fas fa-envelope"></i> quezoncity@pup.edu.ph<br></a>
+          <a href="tel:282878204"><i class="fas fa-phone"></i> 282878204</a>
+      </div>
+  </div>
+
+
+  <div class="footer-col">
+      <h4>links</h4>
+      <ul>
+          <li><a href="#Home">home</a></li>
+          <li><a href="#About">about</a></li>
+          <li><a href="#Course">academic program</a></li>
+          <li><a href="#Gallery">gallery</a></li>
+      </ul>
+  </div>
+  <div class="footer-col">
+      <h4>follow us</h4>
+      <div class="links">
+          <a href="#"><i class="fab fa-spotify"></i></a>
+          <a href="https://www.facebook.com/ThePUPQCCampusOfficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/voxnova_pupqc?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/thepupofficial/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+  </div>
+</footer>
+
+</html>
+  
